@@ -2,10 +2,24 @@ package payau.core.oop.lesson2;
 
 public class Computer {
 
-    int ssd = 256;
+    private int ssd = 256;
     int ram = 4096;
 
-    void load() {
+    public Computer() {
+        System.out.println("Я был создан");
+    }
+
+    public Computer(int ssd, int ram) {
+        this.ssd = ssd;
+        this.ram = ram;
+    }
+
+    protected void load() {
         System.out.println("Я загрузился!!!");
+    }
+
+    public void printState() {
+        System.out.println("ssd:" + ssd);
+        System.out.println("ram:" + ram);
     }
 }
