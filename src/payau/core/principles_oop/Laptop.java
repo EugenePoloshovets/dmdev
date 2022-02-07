@@ -1,6 +1,6 @@
 package payau.core.principles_oop;
 
-public class Laptop extends Computer{
+public class Laptop extends Computer {
 
     private int weight;
 
