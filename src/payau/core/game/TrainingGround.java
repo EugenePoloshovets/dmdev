@@ -4,19 +4,21 @@ public class TrainingGround {
 
     public static void main(String[] args) {
 
-        Hero hero = new Hero("Boromir");
+        Hero archer = new Archer("Legolas", 15);
+        Hero mage = new Mage("Gendolf", 10);
+        Hero warrior = new Warrior("Boromir", 20);
+        Enemy enemy = new Enemy("Зомби", 100);
 
-        Hero archer = new Archer("Legolas");
-        Hero mage = new Mage("Gendolf");
-        Hero warrior = new Warrior("Boromir");
-
-        print(hero, archer, mage, warrior);
+        print(enemy, archer, mage, warrior);
 
     }
 
-    public static void print(Hero... heroes) {
-        for (Hero hero : heroes) {
-            hero.attackEnemy();
+    public static void print(Enemy enemy, Hero... heroes) {
+        while (enemy.isAlive()) {
+            for (Hero hero : heroes) {
+                hero.attackEnemy(enemy);
+                break;
+            }
         }
     }
 }
