@@ -9,7 +9,7 @@ public class TrainingGround {
         Hero warrior = new Warrior("Boromir", 20);
         Enemy enemy = new Enemy("Зомби", 100);
 
-        print(enemy, archer, mage, warrior);
+        print(enemy, archer, warrior, mage);
 
     }
 
@@ -17,7 +17,6 @@ public class TrainingGround {
         while (enemy.isAlive()) {
             for (Hero hero : heroes) {
                 hero.attackEnemy(enemy);
-                break;
             }
         }
     }

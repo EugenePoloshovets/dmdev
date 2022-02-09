@@ -16,7 +16,7 @@ public class Enemy implements Mortal {
             System.out.println(getName() + " погиб");
         } else {
             health -= Math.min(health, damage);
-            System.out.println(name + " получил урон " + damage + ". Осталось " + health);
+            System.out.println(name + " получил урон - " + damage + ". Осталось " + health);
         }
     }
 
