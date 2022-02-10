@@ -1,6 +1,8 @@
 package payau.core.game;
 
-public class Mage extends Hero {
+import payau.core.game.weapon.MagicWeapon;
+
+public class Mage<T extends MagicWeapon> extends Hero<T> {
 
     public Mage(String name, int damage) {
         super(name, damage);

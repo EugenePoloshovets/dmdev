@@ -1,6 +1,8 @@
 package payau.core.game;
 
-public class Archer extends Hero {
+import payau.core.game.weapon.RangeWeapon;
+
+public class Archer<T extends RangeWeapon> extends Hero<T> {
 
     private Wolf wolf;
 
