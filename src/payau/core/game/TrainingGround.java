@@ -1,5 +1,7 @@
 package payau.core.game;
 
+import java.util.Scanner;
+
 public class TrainingGround {
 
     public static void main(String[] args) {
